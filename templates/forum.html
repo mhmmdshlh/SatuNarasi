@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - SatuNarasi</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .red-gradient {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="shrink-0 flex items-center">
+                        <span class="text-xl font-medium text-white">SATU<span
+                                class="font-bold text-red-500">NARASI</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-white hover:text-red-500 font-semibold transition">Beranda</a>
+                    <a href="civiclab.html" class="text-white hover:text-red-500 font-semibold transition">CivicLab</a>
+                    <a href="akademi.html" class="text-white hover:text-red-500 font-semibold transition">Akademi</a>
+                    <a href="forum.html" class="text-red-500 font-semibold transition">Forum</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-red-500">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="home.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">Beranda</a>
+                <a href="civiclab.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">CivicLab</a>
+                <a href="akademi.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">Akademi</a>
+                <a href="forum.html" class="block px-3 py-2 text-red-500 bg-gray-700 rounded">Forum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-24 pb-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="red-gradient text-white py-12 px-8 rounded-3xl shadow-2xl">
+                <h1 class="text-4xl md:text-5xl font-black mb-4">Suara Warga</h1>
+                <p class="text-xl">Diskusikan isu terkini bersama komunitas dan ahli</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Diskusi -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-black text-gray-900">Forum Diskusi</h2>
+                    <button
+                        class="red-gradient text-white px-6 py-3 rounded-lg font-bold hover:opacity-90 transition shadow-lg">
+                        <i class="fas fa-plus mr-2"></i>Buat Diskusi Baru
+                    </button>
+                </div>
+                <div class="space-y-4" id="forum-threads">
+                    <div
+                        class="border-2 border-gray-200 rounded-xl p-6 hover:border-red-500 hover:shadow-lg transition cursor-pointer">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span
+                                        class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-black">Infrastruktur</span>
+                                    <span class="text-gray-500 font-semibold text-sm">2 jam yang lalu</span>
+                                </div>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">Optimalisasi Jalur Kereta Api di
+                                    Bandung Raya</h4>
+                                <p class="text-gray-700 mb-4">Bagaimana pendapat Anda tentang rencana pembangunan jalur
+                                    kereta api yang menghubungkan Bandung dengan daerah sekitarnya?</p>
+                                <div class="flex items-center gap-6 text-gray-600 font-semibold">
+                                    <span><i class="fas fa-comments mr-2"></i>24 Komentar</span>
+                                    <span><i class="fas fa-thumbs-up mr-2"></i>89 Suka</span>
+                                    <span><i class="fas fa-eye mr-2"></i>342 Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="border-2 border-gray-200 rounded-xl p-6 hover:border-red-500 hover:shadow-lg transition cursor-pointer">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span
+                                        class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-black">Pendidikan</span>
+                                    <span class="text-gray-500 font-semibold text-sm">5 jam yang lalu</span>
+                                </div>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">Akses Pendidikan Berkualitas di Daerah
+                                    Terpencil</h4>
+                                <p class="text-gray-700 mb-4">Diskusi tentang strategi meningkatkan kualitas pendidikan
+                                    di daerah terpencil Jawa Barat.</p>
+                                <div class="flex items-center gap-6 text-gray-600 font-semibold">
+                                    <span><i class="fas fa-comments mr-2"></i>18 Komentar</span>
+                                    <span><i class="fas fa-thumbs-up mr-2"></i>56 Suka</span>
+                                    <span><i class="fas fa-eye mr-2"></i>218 Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="border-2 border-gray-200 rounded-xl p-6 hover:border-red-500 hover:shadow-lg transition cursor-pointer">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span
+                                        class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-black">Lingkungan</span>
+                                    <span class="text-gray-500 font-semibold text-sm">1 hari yang lalu</span>
+                                </div>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">Pengelolaan Sampah di Kota Besar</h4>
+                                <p class="text-gray-700 mb-4">Bagaimana kita bisa mengatasi masalah sampah yang semakin
+                                    menumpuk di kota-kota besar Jawa Barat?</p>
+                                <div class="flex items-center gap-6 text-gray-600 font-semibold">
+                                    <span><i class="fas fa-comments mr-2"></i>42 Komentar</span>
+                                    <span><i class="fas fa-thumbs-up mr-2"></i>123 Suka</span>
+                                    <span><i class="fas fa-eye mr-2"></i>567 Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survei Prioritas Isu -->
+    <section class="py-8 pb-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+                <h2 class="text-3xl font-black text-gray-900 mb-4">Survei Prioritas Isu Jabar</h2>
+                <p class="text-gray-700 mb-6 text-lg">Bantu kami memahami isu apa yang paling penting menurut Anda untuk
+                    Jawa Barat</p>
+
+                <form id="survey-form">
+                    <div class="space-y-4 mb-6">
+                        <label for="infra-input" class="flex items-center cursor-pointer p-5 rounded-xl transition 
+              border-2 border-gray-200 hover:border-red-500 
+              peer-checked:border-gray-800 peer-checked:bg-gray-50">
+
+                            <input type="radio" name="issue" value="infrastruktur" id="infra-input"
+                                class="peer w-5 h-5 text-red-500 rounded focus:ring-red-500">
+
+                            <div class="ml-4 flex-1">
+                                <div class="font-black text-gray-900 text-lg">Infrastruktur & Transportasi</div>
+                                <div class="text-gray-600">Jalan, jembatan, transportasi publik</div>
+                            </div>
+                            <div class="text-red-500 font-black text-lg" id="infra-votes">0 suara</div>
+                        </label>
+                        <label for="edu-input" class="flex items-center cursor-pointer p-5 rounded-xl transition 
+              border-2 border-gray-200 hover:border-red-500 
+              peer-checked:border-gray-800 peer-checked:bg-gray-50">
+                            <input type="radio" name="issue" value="pendidikan" id="edu-input"
+                                class="peer w-5 h-5 text-red-500 rounded focus:ring-red-500">
+                            <div class="ml-4 flex-1">
+                                <div class="font-black text-gray-900 text-lg">Pendidikan</div>
+                                <div class="text-gray-600">Kualitas sekolah, akses pendidikan, beasiswa</div>
+                            </div>
+                            <div class="text-red-500 font-black text-lg" id="edu-votes">0 suara</div>
+                        </label>
+                        <label for="health-input" class="flex items-center cursor-pointer p-5 rounded-xl transition 
+              border-2 border-gray-200 hover:border-red-500 
+              peer-checked:border-gray-800 peer-checked:bg-gray-50">
+                            <input type="radio" name="issue" value="kesehatan" id="health-input"
+                                class="peer w-5 h-5 text-red-500 rounded focus:ring-red-500">
+                            <div class="ml-4 flex-1">
+                                <div class="font-black text-gray-900 text-lg">Kesehatan</div>
+                                <div class="text-gray-600">Fasilitas kesehatan, tenaga medis, BPJS</div>
+                            </div>
+                            <div class="text-red-500 font-black text-lg" id="health-votes">0 suara</div>
+                        </label>
+                        <label for="env-input" class="flex items-center cursor-pointer p-5 rounded-xl transition 
+              border-2 border-gray-200 hover:border-red-500 
+              peer-checked:border-gray-800 peer-checked:bg-gray-50">
+                            <input type="radio" name="issue" value="lingkungan" id="env-input"
+                                class="peer w-5 h-5 text-red-500 rounded focus:ring-red-500">
+                            <div class="ml-4 flex-1">
+                                <div class="font-black text-gray-900 text-lg">Lingkungan & Kebersihan</div>
+                                <div class="text-gray-600">Pengelolaan sampah, ruang terbuka hijau, polusi</div>
+                            </div>
+                            <div class="text-red-500 font-black text-lg" id="env-votes">0 suara</div>
+                        </label>
+                        <label for="economy-input" class="flex items-center cursor-pointer p-5 rounded-xl transition 
+              border-2 border-gray-200 hover:border-red-500 
+              peer-checked:border-gray-800 peer-checked:bg-gray-50">
+                            <input type="radio" name="issue" value="ekonomi" id="economy-input"
+                                class="peer w-5 h-5 text-red-500 rounded focus:ring-red-500">
+                            <div class="ml-4 flex-1">
+                                <div class="font-black text-gray-900 text-lg">Ekonomi & Ketenagakerjaan</div>
+                                <div class="text-gray-600">Lapangan kerja, UMKM, investasi</div>
+                            </div>
+                            <div class="text-red-500 font-black text-lg" id="economy-votes">0 suara</div>
+                        </label>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-900 font-black mb-2 text-lg">Komentar Tambahan (Opsional)</label>
+                        <textarea
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-red-500 transition"
+                            rows="3" placeholder="Bagikan pemikiran Anda..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="red-gradient text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-black text-lg shadow-xl cursor-pointer">
+                        <i class="fas fa-vote-yea mr-2"></i>Submit Suara Saya
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 Innovation Creator Project - Narasi Jabar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

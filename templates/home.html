@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatuNarasi - Platform Kolaborasi Warga Jawa Barat</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .red-gradient {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="shrink-0 flex items-center">
+                        <span class="text-xl font-medium text-white">SATU<span
+                                class="font-bold text-red-500">NARASI</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-white hover:text-red-500 font-semibold transition">Beranda</a>
+                    <a href="civiclab.html" class="text-white hover:text-red-500 font-semibold transition">CivicLab</a>
+                    <a href="akademi.html" class="text-white hover:text-red-500 font-semibold transition">Akademi</a>
+                    <a href="forum.html" class="text-white hover:text-red-500 font-semibold transition">Forum</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-red-500">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="home.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">Beranda</a>
+                <a href="civiclab.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">CivicLab</a>
+                <a href="akademi.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">Akademi</a>
+                <a href="forum.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded">Forum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                <div class="red-gradient text-white py-20 px-8 text-center">
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 tracking-tight">
+                        Data → Narasi → Advokasi
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 font-medium">
+                        Platform kolaborasi warga Jawa Barat untuk kebijakan publik yang lebih baik.
+                    </p>
+                    <a href="civiclab.html">
+                        <button
+                            class="bg-gray-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition shadow-xl">
+                            Lapor Masalah
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section class="pb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl p-12">
+                <div class="grid md:grid-cols-3 gap-12">
+                    <!-- CivicLab -->
+                    <div class="border-l-4 border-red-500 pl-6">
+                        <h3 class="text-2xl font-black text-gray-900 mb-4">CivicLab</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            Laporkan jalan rusak, banjir, atau isu sosial di sekitarmu.
+                        </p>
+                        <a href="civiclab.html" class="text-red-500 font-bold hover:text-red-600 transition">
+                            Selengkapnya →
+                        </a>
+                    </div>
+
+                    <!-- Akademi Kebijakan -->
+                    <div class="border-l-4 border-red-500 pl-6">
+                        <h3 class="text-2xl font-black text-gray-900 mb-4">Akademi Kebijakan</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            Belajar cara membaca APBD dan memahami hak warga negara.
+                        </p>
+                        <a href="akademi.html" class="text-red-500 font-bold hover:text-red-600 transition">
+                            Selengkapnya →
+                        </a>
+                    </div>
+
+                    <!-- Suara Warga -->
+                    <div class="border-l-4 border-red-500 pl-6">
+                        <h3 class="text-2xl font-black text-gray-900 mb-4">Suara Warga</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            Diskusikan isu terkini bersama komunitas dan ahli.
+                        </p>
+                        <a href="forum.html" class="text-red-500 font-bold hover:text-red-600 transition">
+                            Selengkapnya →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 Innovation Creator Project - Narasi Jabar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
